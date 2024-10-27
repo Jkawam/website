@@ -100,7 +100,7 @@ span{
 }
 
 .home-img img, .about-img img{
-    width: 3-00px; /* Ajuste da largura da imagem (menor para incluir a borda) */
+    width: 300px; /* Ajuste da largura da imagem (menor para incluir a borda) */
     height: 300px; /* Ajuste da altura da imagem (menor para incluir a borda) */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço do círculo */
     object-position: top ; /* Alinha a imagem no canto superior direito */
