@@ -90,8 +90,35 @@ span{
     align-items: center;
 }
 
+.home-img, .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 50%; /* Torna o fundo circular */
+    padding: 10px; /* Cria um espaço ao redor da imagem */
+}
+
 .home-img img, .about-img img{
-    width: 100%;
+    width: 3-00px; /* Ajuste da largura da imagem (menor para incluir a borda) */
+    height: 300px; /* Ajuste da altura da imagem (menor para incluir a borda) */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço do círculo */
+    object-position: top ; /* Alinha a imagem no canto superior direito */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    background-color: rgb(240, 231, 231); /* Fundo branco da imagem */
+    transition: all 0.5s ease; /* Suaviza todas as mudanças */
+}
+
+.home-img img:hover {
+
+    box-shadow: 0 0 15px 10px var(--main-color); /* Borda borrada azul */
+    transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
+}
+
+.about-img img:hover {
+
+    box-shadow: 0 0 15px 10px var(--main-color); /* Borda borrada azul */
+    transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
 }
 
 .home-content, .about-content{
